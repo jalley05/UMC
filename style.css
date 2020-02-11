@@ -1,0 +1,202 @@
+:root {
+    --primary-color: rgba(0, 0, 0, 0.39);
+    --overlay-color: rgba(38, 77, 109, 0.90);
+    --menu-speed: 0.75s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+.showcase {
+    background-color: var(--primary-color);
+    color: #FFFF;
+    height: 100vh;
+    position: relative;
+}
+
+.showcase:before {
+    content:'';
+    background: url('./image.jpg') no-repeat center
+    center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.showcase .showcase-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.showcase h1 {
+    font-size: 4rem;
+}
+
+.showcase h3 {
+    font-size: 2rem;
+}
+
+.showcase p {
+    font-size: 1.3rem;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background-color: var(--primary-color);
+    color: #FFF;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: opacity 1s ease-in;
+}
+
+.btn-hover {
+    opacity: 0.7;
+}
+
+
+/* ---- ICONS ----- */
+.icon-big {
+    font-size: 300%;
+    display: block;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;  /* make the icons inline blocks so you can have width */
+    width: 30px;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /*secrets to align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* 
+
+ABOUT
+
+*/
+
+section {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 3rem;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: var(--primary-color);
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.about-list {
+    display: block;
+    float: left;
+    margin-left: 3%;
+    width: 29.33%;
+}
+
+.about-ser-info {
+    width: 100vw;
+}
+
+.about-list:last-child {
+    margin-right: 3%;
+}
+
+.about-pics {
+    width: 100vw;
+    background-color: var(--primary-color);
+}
+
+/*
+
+CONTACT FORM 
+
+*/
+.contact-form {
+    width: 70vw;
+    max-width: 450px;
+}
+
+
+.contact-form > div > div > label {
+    font-size: 1.3rem;
+}
+
+.contact-form > div > div > input {
+    width: 100%;
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+}
+
+.contact-form > div > div > textarea {
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.contact-label {
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.contact-message {
+    height: 25vh;
+}
+
+textarea {
+    color: #fff;
+}
+
+input {
+    color: #fff;
+}
+
+.contact-message > textarea {
+    height: 100%;
+    background-color: var(--primary-color);
+}

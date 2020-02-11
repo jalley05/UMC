@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="menu.css">
+        <title>Wasco United Methodist Church</title>
+    </head>
+    <body>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./tellMeMore.html">About</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="showcase">
+            <div class="container showcase-inner">
+                <h1>Contact Us</h1><br>
+
+                <form method="post" action="/submit_form" class="contact-form">
+                    <div>
+                        <div class="contact-label">
+                            <label for="name">Name</label>
+                        </div>
+                        <div>
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="contact-label">
+                            <label for="email">Email</label>
+                        </div>
+                        <div>
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="contact-label">
+                            <label>Message</label>
+                        </div>
+                        <div class="contact-message">
+                            <textarea name="message" placeholder="Your message" required></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label>&nbsp;</label>
+                        </div>
+                        <div>
+                            <input type="submit" value="Contact!" class="btn">
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </header>
+    </body>
+</html>
